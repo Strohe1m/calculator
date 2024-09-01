@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script src="calculations.js" defer></script>
+  </head>
+  <body class="body">
+    <main class="main">
+      <div class="calculator-outer">
+        <div class="calculator-inner">
+          <div class="calc-shower">
+            <div class="error-message">Введено не верное значение</div>
+            <div class="nums-shower">
+              <span></span>
+            </div>
+          </div>
+          <div class="calc-buttons">
+            <table class="buttons-table">
+              <tr class="btn-table-line">
+                <td>
+                  <button class="calc-btn black-button" data-value="AC">
+                    <img src="icons/AC.svg" alt="" data-value="AC" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn pink-button" data-value="(">
+                    <img src="icons/(.svg" alt="" data-value="(" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn pink-button" data-value=")">
+                    <img src="icons/).svg" alt="" data-value=")" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn pink-button" data-value="÷">
+                    <img src="icons/Group 1.svg" alt="" data-value="÷" />
+                  </button>
+                </td>
+              </tr>
+              <tr class="btn-table-line">
+                <td>
+                  <button class="calc-btn" data-value="7">
+                    <img src="icons/7.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="8">
+                    <img src="icons/8.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="9">
+                    <img src="icons/9.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn pink-button" data-value="×">
+                    <img src="icons/Frame 7.svg" alt="" data-value="×" />
+                  </button>
+                </td>
+              </tr>
+              <tr class="btn-table-line">
+                <td>
+                  <button class="calc-btn" data-value="4">
+                    <img src="icons/4.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="5">
+                    <img src="icons/5.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="6">
+                    <img src="icons/6.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn pink-button" data-value="-">
+                    <img src="icons/-.svg" alt="" data-value="-" />
+                  </button>
+                </td>
+              </tr>
+              <tr class="btn-table-line">
+                <td>
+                  <button class="calc-btn" data-value="1">
+                    <img src="icons/1.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="2">
+                    <img src="icons/2.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="3">
+                    <img src="icons/3.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn pink-button" data-value="+">
+                    <img src="icons/+.svg" alt="" data-value="+" />
+                  </button>
+                </td>
+              </tr>
+              <tr class="btn-table-line">
+                <td>
+                  <button class="calc-btn" data-value="0">
+                    <img src="icons/0.svg" alt="" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value=".">
+                    <img src="icons/dot.svg" alt="" data-value="." />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn" data-value="<-">
+                    <img src="icons/Vector.svg" alt="" data-value="<-" />
+                  </button>
+                </td>
+                <td>
+                  <button class="calc-btn purple-button" id="get-answer">
+                    <img src="icons/=.svg" alt="" />
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

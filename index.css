@@ -1,0 +1,140 @@
+:root {
+  --nums-shower-max-font-size: 4em;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #75e664cc, #9198e5);
+}
+
+.calculator-outer {
+  height: fit-content;
+  min-width: 359px;
+}
+
+.calculator-inner {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 35px;
+  background-color: rgba(49, 49, 49, 0.5);
+  box-shadow: 0px 10px 20px 1px #d9d9d98f;
+}
+
+.buttons-table {
+  width: 100%;
+}
+
+.calc-shower {
+  height: 245px;
+  border-radius: 35px;
+  background-color: #d9d9d9;
+  position: relative;
+  overflow: hidden;
+}
+
+.settings {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.calc-buttons {
+  box-sizing: border-box;
+  padding: 2px;
+  margin-top: 23px;
+}
+
+td {
+  text-align: center;
+}
+
+.calc-btn {
+  width: 78px;
+  height: 78px;
+  border-radius: 9999px;
+  border: none;
+  background-color: #d9d9d9;
+  transition: 0.3s;
+}
+
+.pink-button {
+  background-color: #ffbfff;
+}
+
+.black-button {
+  background-color: black;
+}
+
+.purple-button {
+  background-color: #a300a5;
+}
+
+tr.btn-table-line > td {
+  padding-bottom: 0.5em;
+}
+
+.nums-shower {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  box-sizing: border-box;
+  font-size: var(--nums-shower-max-font-size);
+}
+
+.nums-shower span {
+  position: absolute;
+  right: 35px;
+  bottom: 30px;
+  max-width: 80%;
+  overflow: auto;
+}
+
+.nums-shower span::-webkit-scrollbar {
+  height: 0;
+}
+
+.calculation-shower {
+  position: absolute;
+  border: 1px solid;
+  width: 100%;
+  height: 20px;
+  top: 67px;
+  left: 0;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.error-message {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  top: -40px;
+  background-color: rgba(144, 0, 0, 0.753);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.3s;
+}
+
+/* ___________________-hovers ________________*/
+
+.calc-btn:hover {
+  box-shadow: 0px 0px 50px 1px #d9d9d9;
+}
